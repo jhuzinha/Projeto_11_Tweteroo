@@ -26,9 +26,6 @@ app.post("/tweets", (req, res) => {
     res.status(201).send("OK")
 })
 
-app.get("/tweets", (req, res) => {   
-    res.send(tweets.filter((_,index)=> index <= 9))
-})
 
 
 app.listen(5000)
